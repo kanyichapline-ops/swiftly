@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# This tells Apache the project is in the 'swiftly' folder
+RewriteBase /swiftly/
+
+# If the user tries to open an actual image or css file, let them
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# This catches everything else (like NbjHcW) and sends it to redirect.php
+RewriteRule ^([a-zA-Z0-9]+)$ redirect.php?code=$1 [L]
