@@ -32,7 +32,7 @@ Swiftly is a professional-grade URL management tool. It combines high-end aesthe
 ## 🚀 Installation & Setup
 1.  **Clone the Repository**
     ```bash
-    git clone https://github.com/CHAPLINE055/Swiftly-URL-Shortener.git
+    git clone https://github.com/kanyichapline-ops/swiftly.git
     ```
 2.  **Database Setup**
     *   Import `swiftly_db.sql` into your MySQL server. This will create the `swiftly_db` database and all necessary tables (`links`, `analytics`, `rate_limits`).
